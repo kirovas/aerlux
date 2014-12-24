@@ -43,9 +43,25 @@
 					  
 					  
 					  <ul class="nav navbar-nav navbar-right">
-						<li><a href="#">RU</a></li>
-						<li><a href="#">Все предложения</a></li>
-						<li><a href="#">Контакты</a></li>
+						
+						<li role="presentation" class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false" >
+      RU
+    </a>
+    <ul class="dropdown-menu" role="menu">
+     <li><a href="#">EN</a></li>
+    </ul>
+  </li>
+						<li role="presentation" class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Все предложения</a>
+							<ul class="dropdown-menu" role="menu">
+							 <li><a href="#">Все предложения</a></li>
+							 <li><a href="#">Все предложения</a></li>
+							 <li><a href="#">Все предложения</a></li>
+							 <li><a href="#">Все предложения</a></li>
+							</ul>
+						</li>
+						<li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover="dropdown" aria-expanded="false">Контакты</a></li>
 						<li><a href="#">Вход</a></li>
 						
 					  </ul>
@@ -65,12 +81,12 @@
 
 						  <!-- Nav tabs -->
 						  <ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Авиа</a></li>
-							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">отели</a></li>
-							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">авто</a></li>
-							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Развлечения</a></li>
-							<li role="presentation"><a href="#tour" aria-controls="tour" role="tab" data-toggle="tab">туры</a></li>
-							<li role="presentation"><a href="#cruise" aria-controls="cruise" role="tab" data-toggle="tab">кРУИЗЫ</a></li>
+							<li role="presentation" class="active"><a id="avia" href="#home" aria-controls="home" role="tab" data-toggle="tab">Авиа</a></li>
+							<li role="presentation"><a id="hotel" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">отели</a></li>
+							<li role="presentation"><a id="auto" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">авто</a></li>
+							<li role="presentation"><a id="enter" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Развлечения</a></li>
+							<li role="presentation"><a id="tour" href="#tour" aria-controls="tour" role="tab" data-toggle="tab">туры</a></li>
+							<li role="presentation"><a id="cruise" href="#cruise" aria-controls="cruise" role="tab" data-toggle="tab">кРУИЗЫ</a></li>
 						  </ul>
 
 						  <!-- Tab panes -->
@@ -184,8 +200,14 @@
 								<div class="col-md-6 big-shadow">
 									<div class="main-item">
 										<div class="image"><img src="images/pic-1.png" alt="" /></div>
-										<div class="special-week"></div>
-										<div class="special"></div>
+										<div class="special-week">
+											<p>ПРЕДЛОЖЕНИЕ НЕДЕЛИ</p>
+										</div>
+										<div class="special">
+											<h3>сказка в тайланде</h3>
+											<span class="sp-price">20 000 руб</span>
+											<span>7 ночей HB</span>
+										</div>
 									</div>
 								</div>
 								<div class="col-md-3 small-shadow">
@@ -446,5 +468,6 @@
 											slideMargin: 10
 										});
 									</script>
+								
   </body>
 </html>

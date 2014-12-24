@@ -46,6 +46,9 @@ background: url(../images/arr.png) no-repeat right center;
 line-height: 18px;
 font-weight:700;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 .main{
 	padding-top:35px;
 }
@@ -75,6 +78,24 @@ background:url(../images/tab-bg.png)no-repeat right top;
 	font-weight:700;
 	border:0px;
 	color:#444444;
+}
+.nav-tabs > li > a#avia{
+	background:url(../images/avia.png)no-repeat 5px 5px;
+}
+.nav-tabs > li > a#hotel{
+	background:url(../images/hotel.png)no-repeat 5px 5px;
+}
+.nav-tabs > li > a#auto{
+	background:url(../images/auto.png)no-repeat 5px 5px;
+}
+.nav-tabs > li > a#enter{
+	background:url(../images/enter.png)no-repeat 5px 5px;
+}
+.nav-tabs > li > a#tour{
+	background:url(../images/tour.png)no-repeat 5px 5px;
+}
+.nav-tabs > li > a#cruise{
+	background:url(../images/enter.png)no-repeat 5px 5px;
 }
 .tab-content{
 	background:#3c71af;
@@ -305,6 +326,55 @@ min-height: 270px;
 padding-bottom:20px;
 position:relative;
 }
+.special-week{
+	background:#fbc732;
+	position:absolute;
+	width:120px;
+	height:46px;
+	bottom: 100px;
+left: -10px;
+padding: 4px 5px;
+}
+.special-week p{
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+}
+.special h3{
+	margin:0px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:15px;
+	text-transform:uppercase;
+	
+}
+.special{
+	background:#d5212c;
+	width:270px;
+	height:65px;
+	position:absolute;
+	bottom:30px;
+	left:-20px;
+	font-family: 'Open Sans', sans-serif;
+	padding:10px 20px;
+}
+.special span{
+	display:inline-block;
+	color:#fff;
+	font-size:14px;
+	font-weight:700;
+}
+.special span.sp-price{
+	display:inline-block;
+	color:#fff;
+	font-size:22px;
+	font-weight:800;
+	font-family: 'Open Sans', sans-serif;
+	margin-right:10px;
+}
 .item{
 	border-top:3px solid #3c71af;
 	padding-bottom:20px;
@@ -434,9 +504,9 @@ margin-bottom:40px;
 	margin:0px;
 	padding:0px;
 	list-style:none;
-	width:50%;
-	display:block;
-	float:left;
+	display:inline-block;
+	width: 48%;
+	vertical-align:top;
 }
 .foo-nav li{
 	padding:0px 10px 20px 0px;
@@ -465,8 +535,8 @@ margin-bottom:40px;
 	font-family: 'Open Sans', sans-serif;
 }
 .recent a{
-	float:left;
-	width:50%;
+	display:inline-block;
+	width:48%;
 	padding-bottom:20px;
 	color:#999999;
 	font-size:13px;
