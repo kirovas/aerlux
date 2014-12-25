@@ -95,7 +95,7 @@
 								<form id="order-form">
 								<div class="row">
 								<div class="radio col-md-3">
-								  <input type="radio" name="rw" id="radio1" value="1w" class="css-radio" /><label for="radio1" class="css-label radGroup2">В одну сторону</label>
+								  <input type="radio" name="rw" id="radio1" value="1w" class="css-radio" checked="checked" /><label for="radio1" class="css-label radGroup2">В одну сторону</label>
 								</div>
 								<div class="radio col-md-3">
 								  <input type="radio" name="rw" id="radio2" value="2w" class="css-radio" /><label for="radio2" class="css-label radGroup2">Туда и обратно</label>
@@ -107,13 +107,13 @@
 								<div class="row">
 								  <div class="form-group col-md-6">
 									<label  for="fc">Откуда</label>
-									<input type="text" class="form-control" id="fc" name="fc" value="Москва">
+									<input type="text" class="form-control" id="fc" name="fc"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
 									<p>или выберите из <a href="#">списка</a></p>
 									<span class="w2-arrows"></span>
 								  </div>
 								  <div class="form-group col-md-6">
 									<label  for="toc">Куда</label>
-									<input type="text" class="form-control" id="toc" name="toc" value="Хургада">
+									<input type="text" class="form-control" id="toc" name="toc"  placeholder="Милан" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Милан'">
 									<p>или выберите из <a href="#">списка</a></p>
 								  </div>
 								  </div>
@@ -122,7 +122,7 @@
 									<p class="f-title">Количество пассажиров</p>
 									<div class="row">
 										<div class="form-group col-s3">
-											<input type="text" class="form-control" id="pas12p" name="pas12p" >
+											<input type="text" class="form-control" id="pas12p" name="pas12p"  value="1">
 											<p>12+ лет</p>
 										</div>
 										<div class="form-group col-s3">
@@ -134,7 +134,10 @@
 											<p>до 2 лет</p>
 										</div>
 										<div class="form-group col-s4">
-											<input type="text" class="form-control" id="p-class" name="p-class" >
+											<select class="select-css">
+												<option>Эконом</option>
+												<option>Бизнес</option>
+											</select>
 											<p>Класс</p>
 										</div>
 										<div class="form-group col-md-12">
@@ -411,33 +414,65 @@
 			<div class="row">
 				<div class="container">
 					<div class="footer">
-					<div class="col-md-4">
+					<div class="column">
 						<ul class="foo-nav">
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Информация</a></li>
-							<li><a href="#">Авиабилеты</a></li>
-							
-						</ul>
-						<ul class="foo-nav">
-						<li><a href="#">О компании</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Частые вопросы</a></li>
+							<li><a href="#">Вакансии</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
+						
 					</div>
-					<div class="col-md-4">
+					<div class="column">
 						<div class="copy">
-							<h3>Защита авторских прав</h3>
-							<p>Все права защищены авторским правом. Использование материалов разрешаетсятолько при письменном соглашении aerlux.ru</p>
+							<h3>методы оплаты</h3>
+							<p><img src="images/visa.png" /> <img src="images/mc.png" /></p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="column">
 						<div class="recent">
-							<h3>вам будет полезно</h3>
+							<h3>Партнеры</h3>
 							<a href="#">www.wizzair.com</a>
 							<a href="#">www.blueair.ru</a>
-							<a href="#">www.airbaltic.com</a>
-							<a href="#">www.ukravia.ua</a>
+							
 						</div>
 					</div>
+					<div class="column-small">
+						<div class="recent">
+							
+							<a href="#"><img src="images/iata.png" /></a>
+							<a href="#"><img src="images/iata.png" /></a>
+							
+						</div>
+					</div>
+					<div class="column">
+						<div class="recent">
+							<a href="#">Полезные ссылки</a>
+							<a href="#">Корпоративным клиентам</a>
+							<a href="#">Агенствам</a>
+						</div>
+					</div>
+					<div class="column last">
+						<div class="copy">
+							<h3>мы в соцсетях</h3>
+							<a href="#"><img src="images/fb.png" /></a>
+							<a href="#"><img src="images/tw.png" /></a>
+						</div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="column">
+						<div class="copy">
+							<p>Copyright    2007 - 2010  Toate drepturile rezervate. </p>
+						</div>
+					</div>
+						</div>
+						<div class="col-md-6">
+							<div class="term">
+								<a href="#">Termeni si conditii </a>  <span>| </span>  <a href="#">Policia de confidentiate</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -459,6 +494,7 @@
 												pickTime: false
 											});
 										});
+										
 									</script>
 									<script>
 										$('.bxslider').bxSlider({
@@ -467,6 +503,10 @@
 											maxSlides: 4,
 											slideMargin: 10
 										});
+										var myDate = new Date();
+var prettyDate =(myDate.getMonth()+1) + '/' + myDate.getDate() + '/' +
+        myDate.getFullYear();
+$("#datetimepicker6").val(prettyDate);
 									</script>
 								
   </body>
