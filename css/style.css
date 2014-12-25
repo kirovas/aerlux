@@ -631,12 +631,8 @@ color: #fff;
 and (min-width : 481px)
 and (max-width : 768px) {
     /* Styles */
- .navbar-default .navbar-collapse{
-	background:#3c71af;
- }
- .navbar-default .navbar-nav > li > a {
-color: #fff;
-}
+
+
 }
  
 /* iPads (landscape) ----------- */
@@ -647,12 +643,8 @@ and (max-width : 1024px) {
  .navbar-default .navbar-nav > li{
 	padding: 0 2% 0 1%;
  }
- .navbar-default .navbar-collapse{
-	background:#3c71af;
- }
- .navbar-default .navbar-nav > li > a {
-color: #fff;
-}
+
+
 }
 @media (max-width: 767px){
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
