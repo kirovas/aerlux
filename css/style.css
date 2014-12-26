@@ -575,6 +575,8 @@ margin-bottom:40px;
 }
 .breadcrumb li a{
 	color:#ecadb0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
 }
 .breadcrumb > .active {
 color: #fff;
