@@ -568,6 +568,70 @@ margin-bottom:40px;
 	font-family: 'Open Sans', sans-serif;
 	
 }
+.breadcrumb{
+	background:#d8333d;
+	border-radius:0px;
+	
+}
+.breadcrumb li a{
+	color:#ecadb0;
+}
+.breadcrumb > .active {
+color: #fff;
+}
+.breadcrumb > li + li:before {
+padding: 0 10px;
+color: #ecadb0;
+content: ">";
+}
+.white-cont{
+	background:#fff;
+}
+.content{
+	padding:30px;
+	font-family: 'Open Sans', sans-serif;
+}
+.content h2{
+	text-transform:uppercase;
+	color:#444444;
+	font-size:28px;
+	font-weight:300;
+	margin-bottom:25px;
+}
+.content p{
+	color:#444444;
+	font-size:13px;
+	font-weight:700;
+	margin-bottom:15px;
+	line-height:21px;
+}
+.tour-list p span{
+	color:#3c71af;
+}
+.bordered{
+	border-bottom:1px solid #e0e0e0;
+}
+.for-tour-btn{
+	margin-top:40px;
+	margin-bottom:30px;
+}
+.btn-tour{
+	border:0px;
+	line-height:40px;
+	color:#fff;
+	text-transform:upercase;
+	font-size:15px;
+	font-weight:700;
+	background:#d8333d;
+	padding:0px 30px;
+}
+.tai-img img{
+	margin-bottom:20px;
+}
+.map-img{
+	margin-top:70px;
+	margin-bottom:30px;
+}
 section.bottom{
 	background:#444444;
 	min-height:160px;
