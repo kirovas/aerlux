@@ -88,27 +88,42 @@ background:url(../images/tab-bg.png)no-repeat right top;
 .nav-tabs > li > a#hotel{
 	background:url(../images/hotel.png)no-repeat 5px 5px;
 }
+.nav-tabs > li:hover a#hotel, .nav-tabs > li.active a#hotel{
+	background:url(../images/hotel-h.png)no-repeat 5px 5px;
+}
 .nav-tabs > li > a#auto{
 	background:url(../images/auto.png)no-repeat 5px 5px;
+}
+.nav-tabs > li:hover a#auto, .nav-tabs > li.active a#auto{
+	background:url(../images/auto-h.png)no-repeat 5px 5px;
 }
 .nav-tabs > li > a#enter{
 	background:url(../images/enter.png)no-repeat 5px 5px;
 }
+.nav-tabs > li:hover a#enter, .nav-tabs > li.active a#enter{
+	background:url(../images/enter-h.png)no-repeat 5px 5px;
+}
 .nav-tabs > li > a#tour{
 	background:url(../images/tour.png)no-repeat 5px 5px;
 }
+.nav-tabs > li:hover a#tour, .nav-tabs > li.active a#tour{
+	background:url(../images/tour-h.png)no-repeat 5px 5px;
+}
 .nav-tabs > li > a#cruise{
 	background:url(../images/enter.png)no-repeat 5px 5px;
+}
+.nav-tabs > li:hover a#cruise, .nav-tabs > li.active a#cruise{
+	background:url(../images/enter-h.png)no-repeat 5px 5px;
 }
 .tab-content{
 	background:#3c71af;
 	padding:20px 20px 0px;
 	font-family: 'helv-med';
 }
-#order-form{
+.main-form{
 	font-family: 'helv-med';
 }
-#order-form .form-group{
+.main-form .form-group{
 	position:relative;
 }
 .form-control{
@@ -124,30 +139,30 @@ span.w2-arrows{
 	top: 36px;
 right: -12px;
 }
-#order-form input[type="text"]{
+.main-form input[type="text"]{
 	border-radius:0px;
 	color:#999;
 	font-size:15px;
 	
 }
-#order-form label{
+.main-form label{
 	color:#fff;
 	font-weight: 400;
 	font-size:15px;
 	margin-bottom:10px;
 }
-#order-form .radio{
+.main-form .radio{
 	margin-bottom:15px;
 	margin-top:0px;
 }
-#order-form .radio + .radio, #order-form .checkbox + .checkbox{
+.main-form .radio + .radio, .main-form .checkbox + .checkbox{
 	margin-top:0px;
 }
-#order-form input[type=radio].css-radio {
+.main-form input[type=radio].css-radio {
 	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
 
-#order-form input[type=radio].css-radio + label.css-label {
+.main-form input[type=radio].css-radio + label.css-label {
 	padding-left:21px;
 	height:16px; 
 	display:inline-block;
@@ -159,17 +174,18 @@ right: -12px;
 	cursor:pointer;
 	color:#fff;
 }
-#order-form select.select-css{
+.main-form select.select-css{
 	border-radius:0px;
 	color:#999;
 	font-size:15px;
 	height:40px;
-	-webkit-appearance: none;
+	width:100%;
+	padding-left:10px;
 }
-#order-form input[type=radio].css-radio:checked + label.css-label {
+.main-form input[type=radio].css-radio:checked + label.css-label {
 	background-position: 0 -16px;
 }
-#order-form label.css-label {
+.main-form label.css-label {
 	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_461f643f8188f0c1942478778d8185a3.png);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -177,6 +193,36 @@ right: -12px;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+.main-form .parlink{
+	color:#adbace;
+	margin-top:40px;
+	display:block;
+	font-size:15px;
+	text-decoration:underline;
+}
+.form-horizontal .form-group{
+	margin-right:-10px;
+	margin-left:-10px;
+	position:relative;
+}
+.form-horizontal .control-label{
+	text-align:left!important;
+	float: left;
+	width:35%;
+	padding-left:10px;
+}
+.dateiconwr{
+	display: block;
+position: absolute;
+width: 23px;
+height: 23px;
+background: url(../images/calendar.png)no-repeat;
+top: 12px;
+right: 21px;
+}
+.pad-top{
+	padding-top:15px;
 }
 input[type=checkbox].css-checkbox {
 	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
@@ -211,14 +257,14 @@ user-select: none;
 .f-title{
 	color:#fff;
 	font-size:15px;
-	margin-bottom:5px;
+	margin-bottom:10px;
 }
-#order-form .form-group p{
+.main-form .form-group p{
 	color:#9eb8d7;
 	font-size:13px;
 	
 }
-#order-form .form-group p a{
+.main-form .form-group p a{
 	color:#9eb8d7;
 	text-decoration:underline;
 }
@@ -261,6 +307,9 @@ right: 21px;
 	font-size:15px;
 	padding:0px 20px;
 }
+.ht{
+	margin-bottom:15px;
+}
 .subscribe{
 	background:#ececeb;
 	padding:30px 20px 10px;
@@ -298,7 +347,15 @@ form#subscribe input[type="text"]{
 	background:#3c71af;
 	font-family: 'helv-med';
 }
-
+.cf90{
+	width:90%;
+	margin:20px auto 40px;
+}
+.cf90:after{
+	display:table;
+	clear:both;
+	content:"";
+}
 .main-content{
 	padding-top:195px;
 	padding-bottom:30px;
@@ -593,6 +650,31 @@ background-color: #fff;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background:#3c71af;
 }
+.navbar-nav > li > .dropdown-menu{
+	background:#3c71af;
+	width: 100%;
+	min-width: 100%;
+}
+.navbar-nav > li > .dropdown-menu li a{
+	color:#fff;
+}
+.navbar-nav > li > .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background:none;
+	color:#fff;
+	text-decoration:underline;
+}
+.r-form-group{
+	float:right;
+}
+.w47{
+	width:49%;
+	padding-left:10px;
+	padding-right:10px;
+}
+.auf{
+	padding-right:10px;
+	margin-bottom:20px;
+}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -621,6 +703,7 @@ and (max-width : 480px) {
  .navbar-default .navbar-collapse{
 	background:#3c71af;
  }
+ .navbar-default .navbar-nav > li{width:100%;}
  .navbar-default .navbar-nav > li > a {
 color: #fff;
 }
@@ -629,10 +712,17 @@ color: #fff;
 /* iPads (portrait) ----------- */
 @media only screen 
 and (min-width : 481px)
-and (max-width : 768px) {
+and (max-width : 767px) {
     /* Styles */
-
-
+.navbar-default .navbar-nav > li{
+	width:100%;
+}
+.navbar-default .navbar-collapse{
+	background:#3c71af;
+ }
+ .navbar-default .navbar-nav > li > a {
+color: #fff;
+}
 }
  
 /* iPads (landscape) ----------- */
@@ -650,11 +740,27 @@ and (max-width : 1024px) {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 color: #fff;
 }
+.nav-tabs > li{
+	background:#ddd;
+}
+.nav-tabs > li > a{
+	background:none!important;
+	padding-left:10px;
+	padding-right:10px;
+}
 }
 @media (min-width: 768px){
 .col-s3, .col-s4{float:left;}
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 color: #fff;
+}
+.navbar-nav.navbar-right:last-child {
+
+min-width: 50%;
+}
+.nav-tabs > li > a{
+	background:none!important;
+	padding-left:20px;
 }
 }
 @media (min-width: 992px){

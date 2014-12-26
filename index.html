@@ -83,16 +83,16 @@
 						  <ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active"><a id="avia" href="#home" aria-controls="home" role="tab" data-toggle="tab">Авиа</a></li>
 							<li role="presentation"><a id="hotel" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">отели</a></li>
-							<li role="presentation"><a id="auto" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">авто</a></li>
+							<li role="presentation"><a id="auto" href="#autoform" aria-controls="autoform" role="tab" data-toggle="tab">авто</a></li>
 							<li role="presentation"><a id="enter" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Развлечения</a></li>
-							<li role="presentation"><a id="tour" href="#tour" aria-controls="tour" role="tab" data-toggle="tab">туры</a></li>
+							<li role="presentation"><a id="tour" href="#f-tour" aria-controls="f-tour" role="tab" data-toggle="tab">туры</a></li>
 							<li role="presentation"><a id="cruise" href="#cruise" aria-controls="cruise" role="tab" data-toggle="tab">кРУИЗЫ</a></li>
 						  </ul>
 
 						  <!-- Tab panes -->
 						  <div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="home">
-								<form id="order-form">
+								<form class="main-form">
 								<div class="row">
 								<div class="radio col-md-3">
 								  <input type="radio" name="rw" id="radio1" value="1w" class="css-radio" checked="checked" /><label for="radio1" class="css-label radGroup2">В одну сторону</label>
@@ -166,10 +166,284 @@
 								  </div>
 								</form>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="profile">2.</div>
-							<div role="tabpanel" class="tab-pane" id="messages">3</div>
-							<div role="tabpanel" class="tab-pane" id="settings">4</div>
-							<div role="tabpanel" class="tab-pane" id="tour">3</div>
+							<!-- HOTEL FORM -->
+							<div role="tabpanel" class="tab-pane" id="profile">
+								<form class="main-form">
+									<div class="row">
+										<div class="form-group col-md-12">
+											<label  for="ac">Город</label>
+									<input type="text" class="form-control" id="ac" name="ac"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-3">
+											<label  for="datetimepicker8">Дата аренды</label>
+											<input type="text" class="form-control" name="datetimepicker8"  id="datetimepicker8">
+											<span class="dateicon"></span>
+										</div>
+										<div class="form-group col-md-2 col-md-offset-1">
+											<label>Ночей</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="form-group col-md-3 col-md-offset-1">
+											<label  for="datetimepicker8">Дата аренды</label>
+											<input type="text" class="form-control" name="datetimepicker8"  id="datetimepicker8">
+											<span class="dateicon"></span>
+										</div>
+									</div>
+									<div class="row">
+									<div class="col-md-6">
+									<p class="f-title">Количество гостей</p>
+									<div class="row">
+										<div class="form-group col-s3">
+											<input type="text" class="form-control" id="pas12p" name="pas12p"  value="1">
+											<p>12+ лет</p>
+										</div>
+										<div class="form-group col-s3">
+											<input type="text" class="form-control" id="pas2-12" name="pas2-12" >
+											<p>2-12 лет</p>
+										</div>
+										<div class="form-group col-s3">
+											<input type="text" class="form-control" id="pas2" name="pas2" >
+											<p>до 2 лет</p>
+										</div>
+										<div class="form-group col-s4">
+											<select class="select-css">
+												<option>3+</option>
+												<option>4+</option>
+											</select>
+											<p>Звезды</p>
+										</div>
+										
+									</div>
+									</div>
+									<div class="col-md-4 col-md-offset-1">
+										<a href="#" class="parlink">Другие параметры</a>
+									</div>
+									<div class="col-md-6 col-md-offset-6">
+									<div class="for-btn ht">
+											<button class="f-btn">ПОДОБРАТЬ</button>
+									</div>
+									</div>
+									</div>
+								</form>
+							</div>
+							<!-- AUTO FORM -->
+							<div role="tabpanel" class="tab-pane" id="autoform">
+								<form class="main-form">
+								<div class="row">
+								<div class="radio col-md-3">
+								  <input type="radio" name="rw3" id="radio3" value="3w" class="css-radio" checked="checked" /><label for="radio3" class="css-label radGroup2">Из аэропорта</label>
+								</div>
+								<div class="radio col-md-3">
+								  <input type="radio" name="rw3" id="radio4" value="4w" class="css-radio" /><label for="radio4" class="css-label radGroup2">Из города</label>
+								</div>
+								
+								</div>
+								<div class="row">
+								<div class="pull-left w47">
+								<div class="row">
+								  <div class="form-group col-md-8">
+									<label  for="ac">Город</label>
+									<input type="text" class="form-control" id="ac" name="ac"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
+									
+									
+								  </div>
+								  <div class="form-group col-md-4">
+									<label  for="ar">Радиус</label>
+									<input type="text" class="form-control" id="ar" name="ar"  >
+									
+								  </div>
+								  </div>
+								  </div>
+								  <div class="pull-right w47">
+								  <div class="row">
+								  <div class="form-group col-md-7 ">
+									<label  for="datetimepicker8">Дата аренды</label>
+									<input type="text" class="form-control" name="datetimepicker8"  id="datetimepicker8">
+									<span class="dateicon"></span>
+								  </div>
+								  <div class="form-group col-md-5">
+									<label  for="at">Время</label>
+									<input type="text" class="form-control" id="at" name="at"  placeholder="12 : 00" onfocus="this.placeholder = ''" onblur="this.placeholder = '12 : 00'">
+									
+								  </div>
+								  </div>
+								  </div>
+								  </div><!-- .row -->
+								  <div class="row">
+								<div class="radio col-md-3">
+								  <input type="radio" name="arw" id="radio5" value="1w" class="css-radio" checked="checked" /><label for="radio5" class="css-label radGroup2">Из аэропорта</label>
+								</div>
+								<div class="radio col-md-3">
+								  <input type="radio" name="arw" id="radio6" value="2w" class="css-radio" /><label for="radio6" class="css-label radGroup2">Из города</label>
+								</div>
+								
+								</div>
+								<div class="row">
+								<div class="pull-left w47">
+								<div class="row">
+								  <div class="form-group col-md-8">
+									<label  for="ac2">Город</label>
+									<input type="text" class="form-control" id="ac2c" name="ac2"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
+									
+									
+								  </div>
+								  <div class="form-group col-md-4">
+									<label  for="ar2">Радиус</label>
+									<input type="text" class="form-control" id="ar2" name="ar2"  >
+									
+								  </div>
+								  </div>
+								  </div>
+								  <div class="pull-right w47">
+								  <div class="row">
+								  <div class="form-group col-md-7 ">
+									<label  for="datetimepicker9">Дата возврата</label>
+									<input type="text" class="form-control" name="datetimepicker9"  id="datetimepicker9">
+									<span class="dateicon"></span>
+								  </div>
+								  <div class="form-group col-md-5">
+									<label  for="at2">Время</label>
+									<input type="text" class="form-control" id="at2" name="at2" placeholder="12 : 00" onfocus="this.placeholder = ''" onblur="this.placeholder = '12 : 00'" >
+									
+								  </div>
+								  </div>
+								  </div>
+								  <div class="for-btn auf">
+											<button class="f-btn">НАЙТИ АВТОМОБИЛЬ</button>
+										</div>
+								  </div><!-- .row -->
+								</form>
+							
+							
+							</div>
+							<!-- activities form -->
+							<div role="tabpanel" class="tab-pane" id="settings">
+								<form class="main-form">
+								<div class="row">
+									<div class="cf90">
+										<div class="form-group col-md-12">
+											<label>Город или аэропорт</label>
+											<input type="text" class="form-control" id="acc" name="acc" placeholder="Москва" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Москва'" >
+										</div>
+										<div class="form-group col-md-4 ">
+											<label  for="datetimepicker10">От даты</label>
+											<input type="text" class="form-control" name="datetimepicker10"  id="datetimepicker10">
+											<span class="dateicon"></span>
+										</div>
+										<div class="form-group col-md-4 col-md-offset-1">
+											<label  for="datetimepicker11">До даты</label>
+											<input type="text" class="form-control" name="datetimepicker11"  id="datetimepicker11">
+											<span class="dateicon"></span>
+										</div>
+									</div>
+									<div class="for-btn auf ">
+											<button class="f-btn">ПОДОБРАТЬ</button>
+										</div>
+								</div>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="f-tour">
+								<div class="row">
+									<form class="main-form form-horizontal">
+									  <div class="col-md-6">
+									  <div class="row">
+									  <div class="form-group ">
+										<label class="control-label">Вид отдыха</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>Пляжный отдых</option>
+												<option>Пляжный отдых</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Страна</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>Египет</option>
+												<option>Египет</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Курорт</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>Хургада</option>
+												<option>Хургада</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Дата заезда</label>
+										<div class="col-sm-7">
+										  <input type="text" class="form-control" name="datein"  id="datein" placeholder="10 мая 2015 года" onfocus="this.placeholder = ''" onblur="this.placeholder = '10 мая 2015 года'">
+											<span class="dateiconwr"></span>
+										</div>
+									  </div>
+									  
+									  </div>
+									  </div>
+									  <div class="col-md-6">
+										<div class="row">
+											<div class="form-group">
+										<label class=" control-label">Сколько людей</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>2 взрослых</option>
+												<option>3 взрослых</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Проезд/перелет</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>Проезд/перелет</option>
+												<option>Проезд/перелет</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Уровень отеля</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>5 звезд</option>
+												<option>4 звезд</option>
+											</select>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label class="control-label">Питание</label>
+										<div class="col-sm-7">
+										  <select class="select-css">
+												<option>Завтрак + ужин</option>
+												<option>Завтрак + ужин</option>
+											</select>
+										</div>
+									  </div>
+										</div>
+									  </div>
+									  <div class="col-md-9 pad-top">
+										<div class="row">
+											<div class="form-group col-md-6">
+											<input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label-ch">Гибкие даты</label>
+											</div>
+											<div class="form-group col-md-6">
+											<input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" /><label for="checkboxG3" class="css-label-ch">Гибкие даты</label>
+											</div>
+										</div>
+									  </div>
+									  <div class="col-md-3">
+										<div class="for-btn auf ">
+											<button class="f-btn">ПОДОБРАТЬ</button>
+										</div>
+									  </div>
+									</form>
+								</div>
+							</div>
 							<div role="tabpanel" class="tab-pane" id="cruise">4</div>
 						  </div>
 
@@ -490,7 +764,7 @@
 	<script src="js/jquery.bxslider.js"></script>
 	 <script type="text/javascript">
 										$(function () {
-											$('#datetimepicker6, #datetimepicker7').datetimepicker({
+											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11').datetimepicker({
 												pickTime: false
 											});
 										});
@@ -506,7 +780,7 @@
 										var myDate = new Date();
 var prettyDate =(myDate.getMonth()+1) + '/' + myDate.getDate() + '/' +
         myDate.getFullYear();
-$("#datetimepicker6").val(prettyDate);
+$("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11").val(prettyDate);
 									</script>
 								
   </body>
