@@ -75,7 +75,7 @@ background:url(../images/tab-bg.png)no-repeat right top;
 }
 .nav-tabs > li:hover, .nav-tabs > li.active{
 	background: #3c71af;
-    background: linear-gradient(220deg, transparent 8px, #3c71af 5px);
+    background: linear-gradient(220deg, transparent 8px, #3c71af 9px);
 }
 .nav-tabs > li > a{
 	padding-left:40px;
