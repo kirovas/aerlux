@@ -124,10 +124,10 @@ background:url(../images/tab-bg.png)no-repeat right top;
 .tab-content{
 	background:#3c71af;
 	padding:20px 20px 0px;
-	font-family: 'helv-med';
+	font-family: 'Open Sans', sans-serif;
 }
 .main-form{
-	font-family: 'helv-med';
+	font-family: 'Open Sans', sans-serif;
 }
 .main-form .form-group{
 	position:relative;
@@ -215,7 +215,7 @@ right: -12px;
 .form-horizontal .control-label{
 	text-align:left!important;
 	float: left;
-	width:35%;
+	width:36%;
 	padding-left:10px;
 }
 .dateiconwr{
@@ -338,7 +338,7 @@ right: 21px;
 	color:#949494;
 }
 form#subscribe{
-	font-family: 'helv-med';
+	font-family: 'Open Sans', sans-serif;
 	color:#999999;
 }
 form#subscribe input[type="text"]{
@@ -351,7 +351,7 @@ form#subscribe input[type="text"]{
 	text-transform:uppercase;
 	padding:0px 20px;
 	background:#3c71af;
-	font-family: 'helv-med';
+	font-family: 'Open Sans', sans-serif;
 }
 .cf90{
 	width:90%;
@@ -502,7 +502,7 @@ margin:0px;
 	text-align:center;
 	color:#999999;
 	font-size:15px;
-	font-family: 'helv-med';
+	font-family: 'Open Sans', sans-serif;
 }
 .t-item{
 	background:#fff;
