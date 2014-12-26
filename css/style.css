@@ -743,11 +743,7 @@ color: #fff;
 .nav-tabs > li{
 	background:#ddd;
 }
-.nav-tabs > li > a{
-	background:none!important;
-	padding-left:10px;
-	padding-right:10px;
-}
+
 }
 @media (min-width: 768px){
 .col-s3, .col-s4{float:left;}
@@ -757,6 +753,11 @@ color: #fff;
 .navbar-nav.navbar-right:last-child {
 
 min-width: 50%;
+}
+.nav-tabs > li > a{
+	background:none!important;
+	padding-left:10px;
+	padding-right:10px;
 }
 .nav-tabs > li > a{
 	background:none!important;
