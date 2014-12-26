@@ -315,6 +315,7 @@ right: 21px;
 }
 .ht{
 	margin-bottom:15px;
+	margin-top: -33px;
 }
 .subscribe{
 	background:#ececeb;
@@ -649,12 +650,14 @@ section.bottom{
 	border-radius:0px;
 	top:20px;
 	padding: 17px 17px;
+	margin-right:16px;
 }
 .navbar-default .navbar-toggle .icon-bar {
 background-color: #fff;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background:#3c71af;
+	margin-right: 16px;
 }
 .navbar-nav > li > .dropdown-menu{
 	background:#3c71af;
@@ -680,6 +683,10 @@ background-color: #fff;
 .auf{
 	padding-right:10px;
 	margin-bottom:20px;
+}
+.container-fluid{
+	padding-right: 10px;
+padding-left: 10px;
 }
 /* Smartphones (portrait) ----------- */
 @media only screen 
@@ -727,13 +734,15 @@ and (max-width : 767px) {
 }
 .navbar-default .navbar-collapse{
 	background:#3c71af;
+	margin-right: 1px;
+	margin-left: -19px;
  }
  .navbar-default .navbar-nav > li > a {
 color: #fff;
 }
 .nav-tabs > li > a{
 	background:none!important;
-	padding-left:20px;
+	padding-left:15px;
 }
 }
  
