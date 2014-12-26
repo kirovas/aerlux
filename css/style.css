@@ -754,13 +754,9 @@ color: #fff;
 
 min-width: 50%;
 }
+
 .nav-tabs > li > a{
-	background:none!important;
-	padding-left:10px;
-	padding-right:10px;
-}
-.nav-tabs > li > a{
-	background:none!important;
+	background:none;
 	padding-left:20px;
 }
 }
