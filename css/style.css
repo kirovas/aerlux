@@ -193,12 +193,12 @@ right: -12px;
 }
 .main-form label.css-label {
 	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_461f643f8188f0c1942478778d8185a3.png);
-	-webkit-touch-callout: none;
+	/*-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+	user-select: none;*/
 }
 .main-form .parlink{
 	color:#adbace;
@@ -721,7 +721,13 @@ and (max-width : 480px) {
  .navbar-default .navbar-nav > li > a {
 color: #fff;
 }
-
+.nav-tabs > li{
+	width:100%;
+}
+.nav-tabs > li > a {
+background: none!important;
+padding-left: 15px;
+}
 }
  
 /* iPads (portrait) ----------- */
@@ -742,7 +748,8 @@ color: #fff;
 }
 .nav-tabs > li > a{
 	background:none!important;
-	padding-left:15px;
+	padding-left:10px;
+	padding-right: 5px;
 }
 }
  
