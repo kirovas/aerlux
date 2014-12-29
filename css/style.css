@@ -821,6 +821,19 @@ background-color: #fff;
 	padding-right: 10px;
 padding-left: 10px;
 }
+
+/* MODAL LOGIN */
+#login-form{
+	
+}
+#login-form .form-group{
+	padding:10px;
+}
+#login-form input[type="text"], #login-form input[type="password"]{
+	border-radius:0px;
+	color:#999;
+	font-size:15px;
+}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
