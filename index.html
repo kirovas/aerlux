@@ -107,31 +107,36 @@
 								<div class="row">
 								  <div class="form-group col-md-6">
 									<label  for="fc">Откуда</label>
-									<input type="text" class="form-control" id="fc" name="fc"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
+									<input type="text" class="form-control" id="fc" name="fc"  placeholder=" пример: Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
 									<p>или выберите из <a href="#">списка</a></p>
-									<span class="w2-arrows"></span>
+									<!--<span class="w2-arrows"></span>-->
 								  </div>
 								  <div class="form-group col-md-6">
 									<label  for="toc">Куда</label>
-									<input type="text" class="form-control" id="toc" name="toc"  placeholder="Милан" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Милан'">
+									<input type="text" class="form-control" id="toc" name="toc"  placeholder="пример: Милан" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Милан'">
 									<p>или выберите из <a href="#">списка</a></p>
 								  </div>
 								  </div>
-								  <!-- hidden only on mobile -->
-										<div class="row hidden-md hidden-lg">
-											<div class="form-group col-md-6">
-											<label>Дата вылета</label>
-												<input type='text' class="form-control" id='datetimepicker6'/>
-												<span class="dateicon"></span>
-											</div>
-											<div class="form-group col-md-6" id="autohide">
-											<label>Дата прилета</label>
-												<input type='text' class="form-control" id='datetimepicker7'/>
-												<span class="dateicon"></span>
-											</div>
-										</div>
-										<!-- .hidden only on mobile -->
+								  
 								  <div class="row">
+								  <div class="col-md-6">
+									<div class="row ">
+										<div class="form-group col-md-6">
+										<label>Дата вылета</label>
+											<input type='text' class="form-control" id='datetimepicker6'/>
+											<span class="dateicon"></span>
+										</div>
+										<div class="form-group col-md-6" id="autohide">
+										<label>Дата прилета</label>
+											<input type='text' class="form-control" id='datetimepicker7'/>
+											<span class="dateicon"></span>
+										</div>
+										<div class="form-group col-md-12">
+											<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label-ch">Гибкие даты</label>
+										</div>
+										</div>
+										
+									</div>
 									<div class="col-md-6">
 									<p class="f-title">Количество пассажиров</p>
 									<div class="row">
@@ -154,28 +159,13 @@
 											</select>
 											<p>Класс</p>
 										</div>
-										<div class="form-group col-md-12">
-											<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label-ch">Гибкие даты</label>
-										</div>
+										
 									</div>
-									</div>
-									<div class="col-md-6">
-									<div class="row hidden-xs hidden-sm">
-										<div class="form-group col-md-6">
-										<label>Дата вылета</label>
-											<input type='text' class="form-control" id='datetimepicker6'/>
-											<span class="dateicon"></span>
-										</div>
-										<div class="form-group col-md-6" id="autohide">
-										<label>Дата прилета</label>
-											<input type='text' class="form-control" id='datetimepicker7'/>
-											<span class="dateicon"></span>
-										</div>
-										</div>
-										<div class="for-btn">
+									<div class="for-btn">
 											<button class="f-btn">ПОДОБРАТЬ БИЛЕТЫ</button>
 										</div>
 									</div>
+									
 								 
 								  </div>
 								</form>
@@ -796,9 +786,13 @@
 	<script src="js/bootstrap-datetimepicker.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	 <script type="text/javascript">
+	
 										$(function () {
+										 
 											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11').datetimepicker({
-												pickTime: false
+												pickTime: false,
+												format: 'DD/MM/YYYY',
+												startDate: '-3d'
 											});
 										});
 										
@@ -811,9 +805,15 @@
 											slideMargin: 10
 										});
 										var myDate = new Date();
-var prettyDate =(myDate.getMonth()+1) + '/' + myDate.getDate() + '/' +
+var prettyDate =( myDate.getDate() + '/' + myDate.getMonth()+1) + '/' +
         myDate.getFullYear();
 $("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11").val(prettyDate);
+									</script>
+									<script>
+										$('#datetimepicker7').click(function() {
+										   $('#radio2').trigger("click");
+
+										});
 									</script>
 									
 								
