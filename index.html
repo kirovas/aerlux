@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>home</title>
 	 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -117,6 +117,20 @@
 									<p>или выберите из <a href="#">списка</a></p>
 								  </div>
 								  </div>
+								  <!-- multi city -->
+								  <div class="row" id="mcity-hide" style="display:none;">
+								  <div class="form-group col-md-6">
+									<label  for="fc">Откуда</label>
+									<input type="text" class="form-control" id="fc" name="fc"  placeholder=" пример: Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
+									<p>или выберите из <a href="#">списка</a></p>
+									<!--<span class="w2-arrows"></span>-->
+								  </div>
+								  <div class="form-group col-md-6">
+									<label  for="toc">Куда</label>
+									<input type="text" class="form-control" id="toc" name="toc"  placeholder="пример: Милан" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Милан'">
+									<p>или выберите из <a href="#">списка</a></p>
+								  </div>
+								  </div>
 								  
 								  <div class="row">
 								  <div class="col-md-6">
@@ -128,7 +142,7 @@
 										</div>
 										<div class="form-group col-md-6" id="autohide">
 										<label>Дата прилета</label>
-											<input type='text' class="form-control" id='datetimepicker7'/>
+											<input type='text' class="form-control" id='datetimepicker7' disabled />
 											<span class="dateicon"></span>
 										</div>
 										<div class="form-group col-md-12">
@@ -145,11 +159,11 @@
 											<p>12+ лет</p>
 										</div>
 										<div class="form-group col-s3">
-											<input type="text" class="form-control" id="pas2-12" name="pas2-12" >
+											<input type="text" class="form-control" id="pas2-12" name="pas2-12" value="0">
 											<p>2-12 лет</p>
 										</div>
 										<div class="form-group col-s3">
-											<input type="text" class="form-control" id="pas2" name="pas2" >
+											<input type="text" class="form-control" id="pas2" name="pas2" value="0">
 											<p>до 2 лет</p>
 										</div>
 										<div class="form-group col-s4">
@@ -187,7 +201,7 @@
 										</div>
 										<div class="form-group col-md-2 col-md-offset-1">
 											<label>Ночей</label>
-											<input type="text" class="form-control" />
+											<input type="text" class="form-control" value="1"/>
 										</div>
 										<div class="form-group col-md-3 col-md-offset-1">
 											<label  for="datetimepicker8">Дата аренды</label>
@@ -204,20 +218,20 @@
 											<p>12+ лет</p>
 										</div>
 										<div class="form-group col-s3">
-											<input type="text" class="form-control" id="pas2-12" name="pas2-12" >
+											<input type="text" class="form-control" id="pas2-12" name="pas2-12" value="0">
 											<p>2-12 лет</p>
 										</div>
-										<div class="form-group col-s3">
-											<input type="text" class="form-control" id="pas2" name="pas2" >
+										<!--<div class="form-group col-s3">
+											<input type="text" class="form-control" id="pas2" name="pas2" value="0">
 											<p>до 2 лет</p>
-										</div>
-										<div class="form-group col-s4">
+										</div>-->
+										<!--<div class="form-group col-s4">
 											<select class="select-css">
 												<option>3+</option>
 												<option>4+</option>
 											</select>
 											<p>Звезды</p>
-										</div>
+										</div>-->
 										
 									</div>
 									</div>
@@ -247,67 +261,47 @@
 								<div class="row">
 								<div class="pull-left w47">
 								<div class="row">
-								  <div class="form-group col-md-8">
+								  <div class="form-group col-md-12">
 									<label  for="ac">Город</label>
 									<input type="text" class="form-control" id="ac" name="ac"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
 									
 									
 								  </div>
-								  <div class="form-group col-md-4">
+								  <!--<div class="form-group col-md-4">
 									<label  for="ar">Радиус</label>
 									<input type="text" class="form-control" id="ar" name="ar"  >
 									
-								  </div>
+								  </div>-->
 								  </div>
 								  </div>
 								  <div class="pull-right w47">
-								  <div class="row">
-								  <div class="form-group col-md-7 ">
-									<label  for="datetimepicker8">Дата аренды</label>
+								  
+								  </div>
+								  </div><!-- .row -->
+								  
+								<div class="row">
+								<div class="pull-left w47">
+								<div class="row">
+								  <div class="form-group col-md-12 ">
+									<label  for="datetimepicker7">Дата аренды</label>
 									<input type="text" class="form-control" name="datetimepicker8"  id="datetimepicker8">
 									<span class="dateicon"></span>
 								  </div>
-								  <div class="form-group col-md-5">
+								  <div class="form-group col-md-12">
 									<label  for="at">Время</label>
 									<input type="text" class="form-control" id="at" name="at"  placeholder="12 : 00" onfocus="this.placeholder = ''" onblur="this.placeholder = '12 : 00'">
 									
 								  </div>
 								  </div>
 								  </div>
-								  </div><!-- .row -->
-								  <div class="row">
-								<div class="radio col-md-3">
-								  <input type="radio" name="arw" id="radio5" value="1w" class="css-radio" checked="checked" /><label for="radio5" class="css-label radGroup2">Из аэропорта</label>
-								</div>
-								<div class="radio col-md-3">
-								  <input type="radio" name="arw" id="radio6" value="2w" class="css-radio" /><label for="radio6" class="css-label radGroup2">Из города</label>
-								</div>
-								
-								</div>
-								<div class="row">
-								<div class="pull-left w47">
-								<div class="row">
-								  <div class="form-group col-md-8">
-									<label  for="ac2">Город</label>
-									<input type="text" class="form-control" id="ac2c" name="ac2"  placeholder="Кишинев" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кишинев'">
-									
-									
-								  </div>
-								  <div class="form-group col-md-4">
-									<label  for="ar2">Радиус</label>
-									<input type="text" class="form-control" id="ar2" name="ar2"  >
-									
-								  </div>
-								  </div>
-								  </div>
 								  <div class="pull-right w47">
 								  <div class="row">
-								  <div class="form-group col-md-7 ">
+								  <div class="form-group col-md-12 ">
 									<label  for="datetimepicker9">Дата возврата</label>
 									<input type="text" class="form-control" name="datetimepicker9"  id="datetimepicker9">
 									<span class="dateicon"></span>
 								  </div>
-								  <div class="form-group col-md-5">
+								  <div class="form-group col-md-12">
 									<label  for="at2">Время</label>
 									<input type="text" class="form-control" id="at2" name="at2" placeholder="12 : 00" onfocus="this.placeholder = ''" onblur="this.placeholder = '12 : 00'" >
 									
@@ -772,6 +766,9 @@
 	  <div class="form-group">
 	  <input type="password" placeholder="Password" name="password" class="form-control" />
 	   </div>
+	   <p>
+	  <a href="#">Registration</a>
+	   </p>
 	  <div class="modal-footer">
         <button type="button" class="btn-tour">Save changes</button>
       </div>
@@ -789,11 +786,12 @@
 	
 										$(function () {
 										 
-											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11').datetimepicker({
+											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11, #datetimepicker12').datetimepicker({
 												pickTime: false,
 												format: 'DD/MM/YYYY',
 												startDate: '-3d'
 											});
+											 
 										});
 										
 									</script>
@@ -814,6 +812,21 @@ $("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #date
 										   $('#radio2').trigger("click");
 
 										});
+										
+										$("#radio1").click(function () {
+                    $('#datetimepicker7').data("DateTimePicker").disable();
+					
+                });
+				$("#radio2").click(function () {
+                    $('#datetimepicker7').data("DateTimePicker").enable();
+                });
+				$("#radio3").click(function () {
+                    $('#mcity-hide').fadeIn();
+					});
+					$("#radio1, #radio2").click(function () {
+                    $('#mcity-hide').fadeOut();
+					});
+				
 									</script>
 									
 								

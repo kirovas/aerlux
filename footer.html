@@ -1,0 +1,131 @@
+<section class="bottom">
+			<div class="row">
+				<div class="container">
+					<div class="footer">
+					<div class="column">
+						<ul class="foo-nav">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Частые вопросы</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						
+					</div>
+					<div class="column">
+						<div class="copy">
+							<h3>методы оплаты</h3>
+							<p><img src="images/visa.png" /> <img src="images/mc.png" /></p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="recent">
+							<h3>Партнеры</h3>
+							<a href="#">www.wizzair.com</a>
+							<a href="#">www.blueair.ru</a>
+							
+						</div>
+					</div>
+					<div class="column-small">
+						<div class="recent">
+							
+							<a href="#"><img src="images/iata.png" /></a>
+							<a href="#"><img src="images/iata.png" /></a>
+							
+						</div>
+					</div>
+					<div class="column">
+						<div class="recent">
+							<a href="#">Полезные ссылки</a>
+							<a href="#">Корпоративным клиентам</a>
+							<a href="#">Агенствам</a>
+						</div>
+					</div>
+					<div class="column last">
+						<div class="copy">
+							<h3>мы в соцсетях</h3>
+							<a href="#"><img src="images/fb.png" /></a>
+							<a href="#"><img src="images/tw.png" /></a>
+						</div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="column">
+						<div class="copy">
+							<p>Copyright    2007 - 2010  Toate drepturile rezervate. </p>
+						</div>
+					</div>
+						</div>
+						<div class="col-md-6">
+							<div class="term">
+								<a href="#">Termeni si conditii </a>  <span>| </span>  <a href="#">Policia de confidentiate</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	
+	</div><!-- .page end -->
+<!-- login form modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" id="login-form">
+	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+      </div>
+	  <div class="form-group">
+      <input type="text" placeholder="Login" name="login" class="form-control" />
+	  </div>
+	  <div class="form-group">
+	  <input type="password" placeholder="Password" name="password" class="form-control" />
+	   </div>
+	  <div class="modal-footer">
+        <button type="button" class="btn-tour">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	 <script type="text/javascript">
+	
+										$(function () {
+										 
+											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11').datetimepicker({
+												pickTime: false,
+												format: 'DD/MM/YYYY',
+												startDate: '-3d'
+											});
+										});
+										
+									</script>
+									<script>
+										$('.bxslider').bxSlider({
+										  slideWidth: 235,
+											minSlides: 2,
+											maxSlides: 4,
+											slideMargin: 10
+										});
+										var myDate = new Date();
+var prettyDate =( myDate.getDate() + '/' + myDate.getMonth()+1) + '/' +
+        myDate.getFullYear();
+$("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11").val(prettyDate);
+									</script>
+									<script>
+										$('#datetimepicker7').click(function() {
+										   $('#radio2').trigger("click");
+
+										});
+									</script>
+									
+								
+  </body>
+</html>
