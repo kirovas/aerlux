@@ -117,6 +117,7 @@
 									<p>или выберите из <a href="#">списка</a></p>
 								  </div>
 								  </div>
+								  <div id="addform"></div>
 								  <!-- multi city -->
 								  <div class="row" id="mcity-hide" style="display:none;">
 								  <div class="form-group col-md-6">
@@ -130,7 +131,9 @@
 									<input type="text" class="form-control" id="toc" name="toc"  placeholder="пример: Милан" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Милан'">
 									<p>или выберите из <a href="#">списка</a></p>
 								  </div>
+								  <div class="form-group col-md-12"><p><a href="javascript:void(0);" class="addform">Add city</a></p></div>
 								  </div>
+								  
 								  
 								  <div class="row">
 								  <div class="col-md-6">
@@ -140,9 +143,9 @@
 											<input type='text' class="form-control" id='datetimepicker6'/>
 											<span class="dateicon"></span>
 										</div>
-										<div class="form-group col-md-6" id="autohide">
+										<div class="form-group col-md-6" id="autohide" style="display:none;">
 										<label>Дата прилета</label>
-											<input type='text' class="form-control" id='datetimepicker7' disabled />
+											<input type='text' class="form-control" id='datetimepicker7' />
 											<span class="dateicon"></span>
 										</div>
 										<div class="form-group col-md-12">
@@ -186,7 +189,7 @@
 							</div>
 							<!-- HOTEL FORM -->
 							<div role="tabpanel" class="tab-pane" id="profile">
-								<form class="main-form">
+								<form class="main-form" method="GET">
 									<div class="row">
 										<div class="form-group col-md-12">
 											<label  for="ac">Город</label>
@@ -195,13 +198,13 @@
 									</div>
 									<div class="row">
 										<div class="form-group col-md-3">
-											<label  for="datetimepicker8">Дата аренды</label>
-											<input type="text" class="form-control" name="datetimepicker8"  id="datetimepicker8">
+											<label  for="datetimepicker15">Дата заезда</label>
+											<input type="text" class="form-control" name="datetimepicker15"  id="datetimepicker15">
 											<span class="dateicon"></span>
 										</div>
 										<div class="form-group col-md-2 col-md-offset-1">
 											<label>Ночей</label>
-											<input type="text" class="form-control" value="1"/>
+											<input type="number" class="form-control" value="" name="night" id="night" />
 										</div>
 										<div class="form-group col-md-3 col-md-offset-1">
 											<label  for="datetimepicker8">Дата аренды</label>
@@ -786,7 +789,7 @@
 	
 										$(function () {
 										 
-											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11, #datetimepicker12').datetimepicker({
+											$('#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11, #datetimepicker12, #datetimepicker15').datetimepicker({
 												pickTime: false,
 												format: 'DD/MM/YYYY',
 												startDate: '-3d'
@@ -805,7 +808,7 @@
 										var myDate = new Date();
 var prettyDate =( myDate.getDate() + '/' + myDate.getMonth()+1) + '/' +
         myDate.getFullYear();
-$("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #datetimepicker10, #datetimepicker11").val(prettyDate);
+$("#datetimepicker6, #datetimepicker7,#datetimepicker9, #datetimepicker10, #datetimepicker11, #datetimepicker15").val(prettyDate);
 									</script>
 									<script>
 										$('#datetimepicker7').click(function() {
@@ -814,11 +817,11 @@ $("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #date
 										});
 										
 										$("#radio1").click(function () {
-                    $('#datetimepicker7').data("DateTimePicker").disable();
+                    $('#autohide').fadeOut();
 					
                 });
 				$("#radio2").click(function () {
-                    $('#datetimepicker7').data("DateTimePicker").enable();
+                    $('#autohide').fadeIn();
                 });
 				$("#radio3").click(function () {
                     $('#mcity-hide').fadeIn();
@@ -828,6 +831,26 @@ $("#datetimepicker6, #datetimepicker7, #datetimepicker8, #datetimepicker9, #date
 					});
 				
 									</script>
+									<script>
+										
+		//$('#datetimepicker8').val(nightD);
+		
+		$('#night').change(function() { 
+		var myD = new Date();
+		//myD.setDate(myD.getDate() );
+var nightD =( myD.getDate() + Number($('#night').val())+ '/' + myD.getMonth()+1) + '/' +
+        myD.getFullYear();
+		$('#datetimepicker8').val(nightD);
+		
+		});
+									</script>
+<script>
+	$(document).ready(function(){
+		$(".addform").click(function(){
+    $("#addform").append('<div class="row"><div class="form-group col-md-6"><label  for="fc">Откуда</label><input type="text" class="form-control" id="fc" name="fc"  placeholder=" пример: Кишинев" onfocus="this.placeholder = " onblur="this.placeholder = Кишинев"><p>или выберите из <a href="#">списка</a></p></div><div class="form-group col-md-6"><label  for="toc">Куда</label><input type="text" class="form-control" id="toc" name="toc"  placeholder="пример: Милан" onfocus="this.placeholder = " onblur="this.placeholder = Милан"><p>или выберите из <a href="#">списка</a></p></div></div>');
+  });
+	});
+</script>
 									
 								
   </body>
