@@ -851,7 +851,7 @@ padding-left: 33px;
 padding-top: 13px;
 }
  .col-s3, .col-s4{
-	width:100%;
+	
 	padding-right:10px;
  }
 .navbar-default .navbar-collapse{
@@ -860,7 +860,7 @@ padding-top: 13px;
  .navbar-default .navbar-nav > li > a {
 color: #fff;
 }
-.col-s3{float:left;}
+.col-s3, .col-s4{float:left;}
 }
  
 /* Smartphones (landscape) ----------- */
@@ -887,6 +887,7 @@ padding-right:5px;
 padding-left: 33px;
 padding-top: 13px;
 }
+.col-s3, .col-s4{float:left;}
 }
  
 /* iPads (portrait) ----------- */
@@ -897,7 +898,7 @@ and (max-width : 767px) {
 .navbar-default .navbar-nav > li{
 	width:100%;
 }
-.col-s3{float:left;}
+.col-s3, .col-s4{float:left;}
 .navbar-default .navbar-collapse{
 	background:#3c71af;
 	margin-right: 1px;
