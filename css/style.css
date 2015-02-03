@@ -861,6 +861,7 @@ padding-top: 13px;
 color: #fff;
 }
 .col-s3, .col-s4{float:left;}
+.main-form .radio{margin-bottom:0px;}
 }
  
 /* Smartphones (landscape) ----------- */
@@ -888,6 +889,7 @@ padding-left: 33px;
 padding-top: 13px;
 }
 .col-s3, .col-s4{float:left;}
+.main-form .radio{margin-bottom:0px;}
 }
  
 /* iPads (portrait) ----------- */
@@ -913,6 +915,7 @@ color: #fff;
 	
 	padding-right: 5px;
 }
+.main-form .radio{margin-bottom:0px;}
 }
  
 /* iPads (landscape) ----------- */
